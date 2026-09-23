@@ -5,7 +5,7 @@ Generate media using your Higgsfield API account, estimate costs, upload inputs,
 | Part | Purpose | Requirements |
 | --- | --- | --- |
 | Python CLI | Executes API requests and downloads media | This checkout, Python, dependencies, credentials, internet |
-| `skills/higgsfield-api/` | Teaches an assistant how to operate the CLI | A working CLI and an assistant able to read files and execute commands |
+| Skill | Teaches an assistant how to operate the CLI | A working CLI and an assistant able to read files and execute commands |
 
 **The skill is instructions, not a standalone generator.** Copying it does not install the CLI or copy your credentials. Keep one working project and point your assistants at it, or set up the project on another machine.
 
