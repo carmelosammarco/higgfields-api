@@ -1,4 +1,6 @@
 interface:
   display_name: "Higgsfield API"
-  short_description: "Create and manage Higgsfield API media"
+  short_description: "Create and manage media through Higgsfield API"
+  icon_small: "./assets/small.png"
+  icon_large: "./assets/large.png"
   default_prompt: "Use $higgsfield-api to estimate and generate media with the Higgsfield API, then show the downloaded result here."
