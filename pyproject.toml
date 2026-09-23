@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "higgsfield-api-cli"
+version = "0.1.0"
+description = "Fast, model-agnostic CLI for the Higgsfield image and video generation API"
+readme = "references/cli-and-api.md"
+requires-python = ">=3.12"
+dependencies = [
+  "httpx>=0.27,<1",
+  "python-dotenv>=1.0,<2",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=9.0.3,<10"]
+
+[project.scripts]
+higgsfield = "higgsfield_cli.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
